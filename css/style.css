@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "brittany";
+  src: url("../fonts/BrittanySignature.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+.barra a {
+  font-size: 2rem;
+}
+/*css del header*/
+.barra {
+  /*background-color: #efe9e4;*/
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.barra__titulo {
+  font-family: brittany;
+  font-size: 3rem;
+  color: #293731;
+  animation-duration: 1.5s;
+  animation-name: aparecer;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.barra__nav {
+  /*background-color: #efe9e4;*/
+}
+.barra__nav__links {
+  padding-right: 2rem;
+  font-size: 2rem;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.barra__nav__links li:hover {
+  background-color: beige;
+}
+/*animacion para links de la barra*/
+/*css del main*/
+main {
+  background-image: url("../multimedia/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tituloprincipal {
+  font-family: brittany;
+  font-size: 5rem;
+  text-align: center;
+  color: #293731;
+}
+
+.trabajos {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 9rem;
+}
+.trabajos__tapices {
+  display: flex;
+  flex-direction: column;
+  /*margin: 0 2rem;*/
+  width: 25%;
+}
+.trabajos__titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.trabajos__descripcion {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.materiales {
+  display: flex;
+  margin-bottom: 9rem;
+  align-items: center;
+  justify-content: center;
+}
+.materiales__titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.materiales__descripcion {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.materiales__hilos {
+  width: 40rem;
+  margin-left: 3rem;
+}
+.imagenRedondeo {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+}
+.imagenRedondeo:hover {
+  transform: scale(1.3);
+} /*animaciones en la imagen, solo cuando el mouse se posiciona arriba*/
+.trabajos:hover .imagenRedondeo:not(:hover) {
+  opacity: 0.5;
+} /*condicionante, solo se opaca cuando el mouse esta arriba de las otras imgs*/
+/*css del footer*/
+.pie {
+  /*background-color: #efe9e4;*/
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.5rem solid white;
+}
+.frase {
+  font-family: brittany;
+  font-size: 2.5rem;
+}
+
+.diy {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diy__video {
+  border: 0.3rem solid white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.nuestrostrabajos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nuestrostrabajos__articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nuestrostrabajos__titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.nuestrostrabajos__descripcion {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 12rem;
+  width: 30rem;
+}
+
+.formularioconsultas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formularioconsultas__grilla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  border: 0.5rem solid white;
+  margin-bottom: 9rem;
+  font-size: 1.6rem;
+}
+
+/*quienes somos*/
+.quienessomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quienessomos__parrafo {
+  margin-bottom: 9rem;
+  margin-top: 9rem;
+  font-size: 1.6rem;
+}
+
+.quienessomos__imagen {
+  /*tamaño de imagen responsive*/
+  width: 30%;
+  height: auto;
+}
+
+/*mobile styles*/
+/*home*/
+@media only screen and (max-width: 480px) {
+  .trabajos {
+    flex-direction: column;
+  }
+  .barra {
+    flex-direction: column;
+    align-items: center;
+  }
+  .barra__nav__links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pie {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formularioconsultas__grilla {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .diy__video {
+    width: auto;
+    height: auto;
+  }
+
+}
+
