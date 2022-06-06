@@ -2,6 +2,7 @@
   font-family: "brittany";
   src: url("../fonts/BrittanySignature.ttf");
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 * {
   margin: 0;
@@ -14,58 +15,41 @@ html {
 .barra a {
   font-size: 2rem;
 }
-/*css del header*/
-.barra {
-  /*background-color: #efe9e4;*/
-  background: linear-gradient(to right, #ffefba, #ffffff);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+
+header nav ul { /*piso la propiedad de boostrap para poder hacer q el nav ocupe todo el ancho*/
+  width: 100%;
 }
+header nav ul li{ /*piso el estilo de los links de boostrap*/
+width: 20%;
+text-align: center;
+font-family:'Montserrat', sans-serif;
+font-size:1rem;
+}
+header nav ul li .nav-link 
+{font-size:1.5rem;
+  text-transform: uppercase;
+}
+body{
+  background-image: url("../multimedia/background\ proyecto\ final.png");
+  background-size:cover;
+  border: solid #293731 4.5px;
+}
+
+
+/*css del header*/
+
 .barra__titulo {
   font-family: brittany;
   font-size: 3rem;
   color: #293731;
-  animation-duration: 1.5s;
-  animation-name: aparecer;
-  animation-iteration-count: 6;
-  animation-direction: alternate;
+ 
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.75;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.barra__nav {
-  /*background-color: #efe9e4;*/
-}
-.barra__nav__links {
-  padding-right: 2rem;
-  font-size: 2rem;
-  gap: 4rem;
-  margin-top: 2rem;
-}
-.barra__nav__links li:hover {
-  background-color: beige;
-}
+
 /*animacion para links de la barra*/
 /*css del main*/
 main {
-  background-image: url("../multimedia/background.jpg");
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,18 +132,6 @@ main {
   font-size: 2.5rem;
 }
 
-.diy {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.diy__video {
-  border: 0.3rem solid white;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
 .nuestrostrabajos {
   display: flex;
   flex-direction: column;
@@ -240,11 +212,31 @@ main {
     width: 30rem;
   }
 }
-@media only screen and (max-width: 950px) {
-  .diy__video {
-    width: auto;
-    height: auto;
+
+@media only screen and (max-width: 767px) {
+  body{
+    background-size: contain;
+  }
+
+  }
+  
+  /*media queries que se desacomodan por boostrap*/
+@media only screen and (max-width: 900px) {
+  .body-index{
+    background-size: contain;
+  }
+  .body-coleccion{
+    background-size: contain;
   }
 
 }
+
+@media only screen and (min-width: 900px) {
+
+  .body-coleccion{
+    background-size: contain;
+  }
+
+}
+
 
