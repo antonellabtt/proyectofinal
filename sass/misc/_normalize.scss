@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  body{
+    background-image: url("../multimedia/background\ proyecto\ final.png");
+    background-size:cover;
+    border: solid #293731 4.5px;
+  }
+  main {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tituloprincipal {
+    font-family: brittany;
+    font-size: 5rem;
+    text-align: center;
+    color: #293731;
+  }

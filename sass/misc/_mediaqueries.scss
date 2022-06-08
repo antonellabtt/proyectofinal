@@ -1,0 +1,50 @@
+/*mobile styles*/
+/*home*/
+@media only screen and (max-width: 480px) {
+    .trabajos {
+      flex-direction: column;
+    }
+    .barra {
+      flex-direction: column;
+      align-items: center;
+      &__nav__links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+    .pie {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .formularioconsultas__grilla {
+      width: 30rem;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    body{
+      background-size: contain;
+    }
+  
+    }
+    
+    /*media queries que se desacomodan por boostrap*/
+  @media only screen and (max-width: 900px) {
+    .body-index{
+      background-size: contain;
+    }
+    .body-coleccion{
+      background-size: contain;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 900px) {
+  
+    .body-coleccion{
+      background-size: contain;
+    }
+  
+  }

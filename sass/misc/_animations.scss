@@ -1,0 +1,6 @@
+.imagenRedondeo:hover {
+    transform: scale(1.3);
+  } /*animaciones en la imagen, solo cuando el mouse se posiciona arriba*/
+  .trabajos:hover .imagenRedondeo:not(:hover) {
+    opacity: 0.5;
+  } /*condicionante, solo se opaca cuando el mouse esta arriba de las otras imgs*/

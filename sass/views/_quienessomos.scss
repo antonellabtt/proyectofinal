@@ -1,0 +1,17 @@
+/*quienes somos*/
+.quienessomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__parrafo {
+        margin-bottom: 9rem;
+        margin-top: 9rem;
+        font-size: 1.6rem;
+      }
+      &__imagen {
+        /*tamaño de imagen responsive*/
+        width: 30%;
+        height: auto;
+      }
+  }
+  

@@ -1,0 +1,27 @@
+.barra {
+  a {
+    font-size: 2rem;
+  }
+  &__titulo {
+    font-family: brittany;
+    font-size: 3rem;
+    color: #293731;
+  }
+}
+
+header nav ul {
+  /*piso la propiedad de boostrap para poder hacer q el nav ocupe todo el ancho*/
+  width: 100%;
+  li {
+    /*piso el estilo de los links de boostrap*/
+    width: 20%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    .nav-link {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+}

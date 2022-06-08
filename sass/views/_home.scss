@@ -1,0 +1,53 @@
+.trabajos {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+    &__tapices {
+        display: flex;
+        flex-direction: column;
+        /*margin: 0 2rem;*/
+        width: 25%;
+      }
+     &__titulo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      &__descripcion {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+      }
+  }
+  .materiales {
+    display: flex;
+    margin-bottom: 9rem;
+    align-items: center;
+    justify-content: center;
+    &__titulo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+      }
+      &__descripcion {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+      }
+      &__hilos {
+        width: 40rem;
+        margin-left: 3rem;
+      }
+  }
+  
+  .imagenRedondeo {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 100%;
+    height: auto;
+    transition: all 1s;
+  }
+  
+  

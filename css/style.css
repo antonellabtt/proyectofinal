@@ -1,242 +1,191 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @font-face {
   font-family: "brittany";
-  src: url("../fonts/BrittanySignature.ttf");
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+  src: url("../fonts/BrittanySignature.ttf"); }
 
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 html {
-  font-size: 62.5%;
-}
-.barra a {
-  font-size: 2rem;
-}
+  font-size: 62.5%; }
 
-header nav ul { /*piso la propiedad de boostrap para poder hacer q el nav ocupe todo el ancho*/
-  width: 100%;
-}
-header nav ul li{ /*piso el estilo de los links de boostrap*/
-width: 20%;
-text-align: center;
-font-family:'Montserrat', sans-serif;
-font-size:1rem;
-}
-header nav ul li .nav-link 
-{font-size:1.5rem;
-  text-transform: uppercase;
-}
-body{
-  background-image: url("../multimedia/background\ proyecto\ final.png");
-  background-size:cover;
-  border: solid #293731 4.5px;
-}
+body {
+  background-image: url("../multimedia/background proyecto final.png");
+  background-size: cover;
+  border: solid #293731 4.5px; }
 
-
-/*css del header*/
-
-.barra__titulo {
-  font-family: brittany;
-  font-size: 3rem;
-  color: #293731;
- 
-}
-
-
-/*animacion para links de la barra*/
-/*css del main*/
 main {
-  
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
+
 .tituloprincipal {
   font-family: brittany;
   font-size: 5rem;
   text-align: center;
-  color: #293731;
-}
+  color: #293731; }
 
-.trabajos {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 9rem;
-}
-.trabajos__tapices {
-  display: flex;
-  flex-direction: column;
-  /*margin: 0 2rem;*/
-  width: 25%;
-}
-.trabajos__titulo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-.trabajos__descripcion {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
-}
-.materiales {
-  display: flex;
-  margin-bottom: 9rem;
-  align-items: center;
-  justify-content: center;
-}
-.materiales__titulo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-}
-.materiales__descripcion {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.6rem;
-  text-align: center;
-}
-
-.materiales__hilos {
-  width: 40rem;
-  margin-left: 3rem;
-}
-.imagenRedondeo {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  width: 100%;
-  height: auto;
-  transition: all 1s;
-}
 .imagenRedondeo:hover {
-  transform: scale(1.3);
-} /*animaciones en la imagen, solo cuando el mouse se posiciona arriba*/
+  transform: scale(1.3); }
+
+/*animaciones en la imagen, solo cuando el mouse se posiciona arriba*/
 .trabajos:hover .imagenRedondeo:not(:hover) {
-  opacity: 0.5;
-} /*condicionante, solo se opaca cuando el mouse esta arriba de las otras imgs*/
-/*css del footer*/
+  opacity: 0.5; }
+
+/*condicionante, solo se opaca cuando el mouse esta arriba de las otras imgs*/
+.barra a {
+  font-size: 2rem; }
+
+.barra__titulo {
+  font-family: brittany;
+  font-size: 3rem;
+  color: #293731; }
+
+header nav ul {
+  /*piso la propiedad de boostrap para poder hacer q el nav ocupe todo el ancho*/
+  width: 100%; }
+  header nav ul li {
+    /*piso el estilo de los links de boostrap*/
+    width: 20%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem; }
+    header nav ul li .nav-link {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+
 .pie {
   /*background-color: #efe9e4;*/
   background: linear-gradient(to right, #ffefba, #ffffff);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.5rem solid white;
-}
+  border: 0.5rem solid white; }
+
 .frase {
   font-family: brittany;
-  font-size: 2.5rem;
-}
+  font-size: 2.5rem; }
 
 .nuestrostrabajos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
+  .nuestrostrabajos__articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nuestrostrabajos__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem; }
+  .nuestrostrabajos__descripcion {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 12rem;
+    width: 30rem; }
 
-.nuestrostrabajos__articulo {
+.trabajos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.nuestrostrabajos__titulo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  margin-top: 2rem;
-}
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 9rem; }
+  .trabajos__tapices {
+    display: flex;
+    flex-direction: column;
+    /*margin: 0 2rem;*/
+    width: 25%; }
+  .trabajos__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem; }
+  .trabajos__descripcion {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    text-align: center; }
 
-.nuestrostrabajos__descripcion {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.6rem;
-  margin-bottom: 12rem;
-  width: 30rem;
-}
+.materiales {
+  display: flex;
+  margin-bottom: 9rem;
+  align-items: center;
+  justify-content: center; }
+  .materiales__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center; }
+  .materiales__descripcion {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    text-align: center; }
+  .materiales__hilos {
+    width: 40rem;
+    margin-left: 3rem; }
+
+.imagenRedondeo {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 100%;
+  height: auto;
+  transition: all 1s; }
 
 .formularioconsultas {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.formularioconsultas__grilla {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 35rem;
-  border: 0.5rem solid white;
-  margin-bottom: 9rem;
-  font-size: 1.6rem;
-}
+  align-items: center; }
+  .formularioconsultas__grilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    border: 0.5rem solid white;
+    margin-bottom: 9rem;
+    font-size: 1.6rem; }
 
 /*quienes somos*/
 .quienessomos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.quienessomos__parrafo {
-  margin-bottom: 9rem;
-  margin-top: 9rem;
-  font-size: 1.6rem;
-}
-
-.quienessomos__imagen {
-  /*tamaño de imagen responsive*/
-  width: 30%;
-  height: auto;
-}
+  align-items: center; }
+  .quienessomos__parrafo {
+    margin-bottom: 9rem;
+    margin-top: 9rem;
+    font-size: 1.6rem; }
+  .quienessomos__imagen {
+    /*tamaño de imagen responsive*/
+    width: 30%;
+    height: auto; }
 
 /*mobile styles*/
 /*home*/
 @media only screen and (max-width: 480px) {
   .trabajos {
-    flex-direction: column;
-  }
+    flex-direction: column; }
   .barra {
     flex-direction: column;
-    align-items: center;
-  }
-  .barra__nav__links {
-    flex-direction: column;
-    align-items: center;
-  }
+    align-items: center; }
+    .barra__nav__links {
+      flex-direction: column;
+      align-items: center; }
   .pie {
     flex-direction: column;
-    align-items: center;
-  }
-  
+    align-items: center; }
   .formularioconsultas__grilla {
-    width: 30rem;
-  }
-}
+    width: 30rem; } }
 
 @media only screen and (max-width: 767px) {
-  body{
-    background-size: contain;
-  }
+  body {
+    background-size: contain; } }
 
-  }
-  
-  /*media queries que se desacomodan por boostrap*/
+/*media queries que se desacomodan por boostrap*/
 @media only screen and (max-width: 900px) {
-  .body-index{
-    background-size: contain;
-  }
-  .body-coleccion{
-    background-size: contain;
-  }
-
-}
+  .body-index {
+    background-size: contain; }
+  .body-coleccion {
+    background-size: contain; } }
 
 @media only screen and (min-width: 900px) {
-
-  .body-coleccion{
-    background-size: contain;
-  }
-
-}
-
-
+  .body-coleccion {
+    background-size: contain; } }
