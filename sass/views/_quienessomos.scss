@@ -1,7 +1,9 @@
+.tituloprincipal__quienessomos{
+  @extend .tituloprincipal;
+}
 /*quienes somos*/
 .quienessomos {
-    display: flex;
-    flex-direction: column;
+  @include flexi(flex,column);
     align-items: center;
     &__parrafo {
         margin-bottom: 9rem;

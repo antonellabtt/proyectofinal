@@ -1,10 +1,11 @@
+.tituloprincipal__coleccion {
+  @extend .tituloprincipal;
+}
 .nuestrostrabajos {
-    display: flex;
-    flex-direction: column;
+  @include flexi(flex,column);
     align-items: center;
     &__articulo {
-        display: flex;
-        flex-direction: column;
+      @include flexi(flex,column);
         align-items: center;
       }
       &__titulo {

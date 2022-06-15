@@ -1,0 +1,14 @@
+$estilos: (
+    colortitulo:#293731,
+    fuentetitulos: brittany
+);
+.tituloprincipal {
+    font-family: map-get($estilos, fuentetitulos);
+    font-size: 5rem;
+    text-align: center;
+    color: map-get($estilos, colortitulo);
+  }
+  @mixin flexi ($disp, $dire)
+  {display: $disp;
+    flex-direction: $dire;    
+  }

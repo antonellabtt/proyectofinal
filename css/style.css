@@ -4,6 +4,12 @@
   font-family: "brittany";
   src: url("../fonts/BrittanySignature.ttf"); }
 
+.tituloprincipal, .tituloprincipal__coleccion, .tituloprincipal__contacto, .tituloprincipal__quienessomos {
+  font-family: brittany;
+  font-size: 5rem;
+  text-align: center;
+  color: #293731; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -20,12 +26,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.tituloprincipal {
-  font-family: brittany;
-  font-size: 5rem;
-  text-align: center;
-  color: #293731; }
 
 .imagenRedondeo:hover {
   transform: scale(1.3); }

@@ -1,10 +1,11 @@
+.tituloprincipal__contacto {
+    @extend .tituloprincipal;
+  }
 .formularioconsultas {
-    display: flex;
-    flex-direction: column;
+    @include flexi(flex,column);
     align-items: center;
     &__grilla {
-        display: flex;
-        flex-direction: column;
+        @include flexi(flex,column);
         align-items: center;
         width: 35rem;
         border: 0.5rem solid white;

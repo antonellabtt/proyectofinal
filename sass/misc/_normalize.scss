@@ -13,13 +13,8 @@
   }
   main {
   
-    display: flex;
-    flex-direction: column;
+    @include flexi(flex,column);
     justify-content: space-between;
+  
   }
-  .tituloprincipal {
-    font-family: brittany;
-    font-size: 5rem;
-    text-align: center;
-    color: #293731;
-  }
+  
